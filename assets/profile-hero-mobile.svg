@@ -10,8 +10,8 @@
 
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.5">
-    <text x="48" y="59" fill="#79dfd1">MICHAEL BERARDI / 2026</text>
-    <text x="552" y="59" fill="#9aa9b0" text-anchor="end">LIBERTY DESIGN</text>
+    <text x="48" y="59" fill="#79dfd1">MICHAEL BERARDI / OPEN SOURCE</text>
+    <text x="552" y="59" fill="#9aa9b0" text-anchor="end">ENGINEERING</text>
   </g>
 
   <g fill="#f3f5f2" font-family="Georgia, Times New Roman, serif">
@@ -55,5 +55,5 @@
     </g>
   </g>
 
-  <text x="552" y="790" fill="#9aa9b0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1.2" text-anchor="end">SOFTWARE ENGINEER · STUDIO OPERATOR</text>
+  <text x="552" y="790" fill="#9aa9b0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1.2" text-anchor="end">SWIFT · RUST · TYPESCRIPT · PYTHON</text>
 </svg>
