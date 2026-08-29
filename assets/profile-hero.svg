@@ -46,13 +46,13 @@
       </g>
       <g transform="translate(24 221)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">03</text>
-        <text x="42" fill="#f3f5f2" font-size="21">UltraTerm</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">the desktop, made legible</text>
+        <text x="42" fill="#f3f5f2" font-size="21">UTP + USAP</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">terminal + subagent protocols</text>
       </g>
       <g transform="translate(24 286)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">04</text>
-        <text x="42" fill="#f3f5f2" font-size="21">UltraVox</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">voice, kept private</text>
+        <text x="42" fill="#f3f5f2" font-size="21">Ultra apps</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">desktop + voice, kept local</text>
       </g>
     </g>
   </g>

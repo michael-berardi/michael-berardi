@@ -5,9 +5,9 @@
 
 <p align="center">
   <a href="#flagship-projects">Flagship projects</a> ·
+  <a href="#protocols">UTP + USAP</a> ·
   <a href="#more-open-source-work">Open-source portfolio</a> ·
-  <a href="#engineering-approach">Engineering approach</a> ·
-  <a href="#where-to-start">Where to start</a>
+  <a href="#engineering-approach">Engineering approach</a>
 </p>
 
 ## What I build
@@ -52,12 +52,26 @@ Private, on-device transcription for macOS, Linux, and Windows. Recordings, tran
 `Rust` `On-device AI` `Transcription` `Cross-platform`<br>
 [Source and releases →](https://github.com/michael-berardi/ultravox-light/releases/latest) · [Project page →](https://implosecybernetics.com/projects/ultravox/)
 
+## Protocols
+
+### [UltraTerm Terminal Protocol (UTP)](https://github.com/michael-berardi/ultraterm-protocol)
+
+A same-user local protocol for inspecting and controlling persistent terminal slots, handing work between profiles, coordinating managers with workers, and reporting through authorized private routes. UTP v2 uses JSON Lines over a mode-`0600` Unix socket; destructive operations use identity-bound dry runs and explicit confirmation.
+
+`Python` `JSON Lines` `Unix sockets` `Agent orchestration`<br>
+[Source →](https://github.com/michael-berardi/ultraterm-protocol) · [Protocol v2 →](https://github.com/michael-berardi/ultraterm-protocol/blob/main/protocols/v2.md)
+
+### [UltraTerm Subagent Protocol (USAP)](https://github.com/michael-berardi/ultraterm-subagent-protocol)
+
+A compact, vendor-neutral protocol for getting more correct work done with subagents. The primary agent keeps decomposition, judgment, integration, and proof; only bounded independent leaves are delegated, concurrency follows the dependency graph, and each leaf routes to the cheapest capable model tier.
+
+`Subagents` `Vendor-neutral` `Model routing` `Integration discipline`<br>
+[Source and protocol →](https://github.com/michael-berardi/ultraterm-subagent-protocol)
+
 ## More open-source work
 
-- **[UltraTerm Protocol](https://github.com/michael-berardi/ultraterm-protocol)** — a local Unix-socket protocol for agents to drive persistent terminal sessions.
 - **[Ultra Media Remote](https://github.com/michael-berardi/ultra-media-remote)** — a shared macOS Now Playing bridge for metadata, artwork, and media transport.
 - **[OverSeer Best Free](https://github.com/michael-berardi/overseer-best-free)** — a zero-dependency resolver for the best available free chat model on OpenRouter.
-- **[UltraTerm Profile Registry](https://github.com/michael-berardi/ultraterm-profile-registry)** — community starter profiles for UltraTerm onboarding, with templates only and no credentials.
 - **[OpenTao](https://github.com/michael-berardi/opentao)** — a phrase-aligned reader for all 81 chapters of the *Daodejing*, with Chinese text, multiple English views, and commentary. [Read it live →](https://opentao.pages.dev/)
 
 ## Engineering approach
@@ -74,11 +88,12 @@ Local-first AI infrastructure, MCP and machine-readable CLIs, browser and deskto
 
 ## Where to start
 
-If you're evaluating my engineering work, each flagship shows a different part of it:
+If you're evaluating my engineering work, these projects show different parts of it:
 
 - **Retex** for CLI and data-contract design, indexing, security, and release discipline.
 - **OverSeer Browser** for browser architecture, permission boundaries, native messaging, and automation ergonomics.
 - **UltraTerm Computer Use** for cross-platform systems work and agent-to-desktop interfaces.
 - **UltraVox Light** for Rust, native applications, media pipelines, and private on-device AI.
+- **UTP and USAP** for local protocol design, safe multi-agent orchestration, delegation economics, and explicit human authorization.
 
 Thoughtful issues, pull requests, and technical conversations are welcome in the relevant repository. For product engineering or consulting, I work through [Liberty Design Studio](https://libertydesign.studio/). Independent software lives under [Implose Cybernetics](https://implosecybernetics.com/).
