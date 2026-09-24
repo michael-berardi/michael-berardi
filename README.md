@@ -1,6 +1,8 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/profile-hero-mobile.svg">
-  <img src="./assets/profile-hero.svg" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/header-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/header-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <img src="./assets/header-light.svg" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
 </picture>
 
 I build the unglamorous parts of AI tooling: the memory, the hands, the plan, and the bill. It runs on your machine, keeps your data in plain files, and is still working in month three, long after the launch thread has scrolled away.
