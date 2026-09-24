@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="540" viewBox="0 0 1280 540" role="img" aria-labelledby="title desc">
-  <title id="title">Michael Berardi — software engineer and studio operator</title>
+  <title id="title">Michael Berardi — software engineer building local-first agent infrastructure</title>
   <desc id="desc">An editorial midnight profile card with selected local-first software systems.</desc>
 
   <rect width="1280" height="540" rx="20" fill="#07141b"/>
@@ -26,7 +26,7 @@
     <text x="70" y="369" font-size="27">I build software that stays useful</text>
     <text x="70" y="405" font-size="27">when the demo is over.</text>
   </g>
-  <text x="70" y="459" fill="#79dfd1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="1.5">LOCAL-FIRST TOOLS / AGENT INFRASTRUCTURE / DURABLE WEB</text>
+  <text x="70" y="459" fill="#79dfd1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="1.5">AGENT INFRASTRUCTURE / LOCAL-FIRST APPS</text>
 
   <g transform="translate(830 104)">
     <rect width="380" height="348" rx="12" fill="#0b2029" stroke="#36525d"/>
@@ -36,23 +36,23 @@
     <g font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
       <g transform="translate(24 91)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">01</text>
-        <text x="42" fill="#f3f5f2" font-size="21">Retex</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">knowledge, kept close</text>
+        <text x="42" fill="#f3f5f2" font-size="21">Steak Pi</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">a coding agent, cooked properly</text>
       </g>
       <g transform="translate(24 156)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">02</text>
-        <text x="42" fill="#f3f5f2" font-size="21">OverSeer Browser</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">the browser, under control</text>
+        <text x="42" fill="#f3f5f2" font-size="21">UltraCompress</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">compaction with no model call</text>
       </g>
       <g transform="translate(24 221)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">03</text>
-        <text x="42" fill="#f3f5f2" font-size="21">UTP + USAP</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">terminal + subagent protocols</text>
+        <text x="42" fill="#f3f5f2" font-size="21">Retex</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">memory in plain Markdown</text>
       </g>
       <g transform="translate(24 286)">
         <text fill="#8499a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">04</text>
-        <text x="42" fill="#f3f5f2" font-size="21">Ultra apps</text>
-        <text x="42" y="25" fill="#a9bac1" font-size="15">desktop + voice, kept local</text>
+        <text x="42" fill="#f3f5f2" font-size="21">OverSeer Browser</text>
+        <text x="42" y="25" fill="#a9bac1" font-size="15">the browser, under control</text>
       </g>
     </g>
   </g>
