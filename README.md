@@ -1,99 +1,49 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/profile-hero-mobile.svg">
-  <img src="./assets/profile-hero.svg" alt="Michael Berardi — software engineer and open-source systems builder working on local-first tools, agent infrastructure, and durable web systems" width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/header-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/header-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <img src="./assets/header-light.svg" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
 </picture>
 
-<p align="center">
-  <a href="#flagship-projects">Flagship projects</a> ·
-  <a href="#protocols">UTP + USAP</a> ·
-  <a href="#more-open-source-work">Open-source portfolio</a> ·
-  <a href="#engineering-approach">Engineering approach</a>
-</p>
+I build the unglamorous parts of AI tooling: the memory, the hands, the plan, and the bill. It runs on your machine, keeps your data in plain files, and is still working in month three, long after the launch thread has scrolled away.
 
-## What I build
+Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 
-I'm a software engineer who likes the edges where applications meet the operating system: local processes, browsers, desktop interfaces, knowledge stores, media pipelines, and the protocols that let agents use them safely.
+## Agent infrastructure
 
-Most of my public work is local-first and cross-platform. I work in Swift, Rust, TypeScript, and Python because the problem decides the tool. The common goal is software that people can inspect, operate, and keep under their control.
+| | |
+|---|---|
+| **[Steak Pi](https://github.com/michael-berardi/steak-pi)** | The [Pi coding agent](https://pi.dev), cooked properly. Native subagents, deterministic compaction, automatic verification, and a TUI worth living in. 22% faster than stock Pi on its matched build benchmark. `TypeScript` |
+| **[UltraCompress](https://github.com/michael-berardi/ultracompress)** | Context compaction with no LLM in the loop. About 65 ms where Claude Code's own summarizer takes 23 to 52 seconds, at $0 per compaction, and anything it condenses stays searchable. Ships for Pi and as a Claude Code plugin. `Rust` |
+| **[UltraTerm Plan](https://github.com/michael-berardi/ultraterm-plan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
+| **[USAP](https://github.com/michael-berardi/ultraterm-subagent-protocol)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. `Protocol` |
+| **[UTP](https://github.com/michael-berardi/ultraterm-protocol)** | Lets local agents inspect and drive persistent terminal sessions. JSON Lines over a `0600` Unix socket, and every destructive action dry-runs first. `Python` |
 
-## Flagship projects
+## Memory and hands
 
-### 01 / [Retex](https://github.com/michael-berardi/retex)
+| | |
+|---|---|
+| **[Retex](https://github.com/michael-berardi/retex)** | A Markdown vault engine and machine-readable CLI for people and agents. Search, recall, backlinks, boards, undo, and MCP over an ordinary folder. No database to get locked into. `Swift` |
+| **[OverSeer Browser](https://github.com/michael-berardi/overseer-browser)** | Model-agnostic browser automation for Chromium. Agents get their own window; your tabs stay yours until you lend one. `TypeScript` `Python` |
+| **[UltraTerm Computer Use](https://github.com/michael-berardi/ultraterm-computer-use)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. `Swift` |
 
-A local-first Markdown knowledge engine and machine-readable CLI for people and agents. Plain files remain the source of truth; exact search, structured queries, bounded recall, MCP access, encrypted exports, and fleet updates sit around them.
+## Apps
 
-`Swift` `Markdown` `MCP` `Local-first`<br>
-[Source and releases →](https://github.com/michael-berardi/retex/releases/latest)
+| | |
+|---|---|
+| **[UltraVox Light](https://github.com/michael-berardi/ultravox-light)** | Private, on-device transcription for macOS, Windows, and Linux. [Download](https://github.com/michael-berardi/ultravox-light/releases/latest) `Rust` |
+| **[Skribi](https://github.com/michael-berardi/skribi)** | A calm reader and editor for Markdown libraries and Retex vaults. Imports Obsidian and Notion without holding your notes hostage. `Rust` |
+| **[OpenTao](https://github.com/michael-berardi/opentao)** | All 81 chapters of the *Daodejing*, phrase-aligned across Chinese and three English readings. [Read it](https://opentao.pages.dev/) `TypeScript` |
 
----
+## Small, sharp tools
 
-### 02 / [OverSeer Browser](https://github.com/michael-berardi/overseer-browser)
+**[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework.<br>
+**[overseer-best-free](https://github.com/michael-berardi/overseer-best-free)** finds the best free chat model on OpenRouter right now, so your bot stops breaking every Thursday.
 
-Model-agnostic browser automation for Chromium. It uses explicit browser ownership, a local native host, per-user IPC, and one stable interface for navigation, extraction, screenshots, uploads, and diagnostics.
+## How I work
 
-`TypeScript` `Chromium` `Browser automation` `Local IPC`<br>
-[Source and documentation →](https://github.com/michael-berardi/overseer-browser#readme)
+Private data stays close to the person who owns it. Permissions and failure modes are designed up front, where they belong. Every dependency has to earn its keep. Claims ship with benchmarks, and the benchmarks ship with their caveats.
 
----
+## Say hello
 
-### 03 / [UltraTerm Computer Use](https://github.com/michael-berardi/ultraterm-computer-use)
-
-Local desktop automation for MCP-capable agents on macOS, Linux, and Windows. Screenshots, accessibility trees, and input actions stay on the machine.
-
-`Swift` `MCP` `Desktop automation` `Cross-platform`<br>
-[Source →](https://github.com/michael-berardi/ultraterm-computer-use) · [Project page →](https://implosecybernetics.com/projects/ultraterm-computer-use/)
-
----
-
-### 04 / [UltraVox Light](https://github.com/michael-berardi/ultravox-light)
-
-Private, on-device transcription for macOS, Linux, and Windows. Recordings, transcripts, and downloaded models stay with the person using it.
-
-`Rust` `On-device AI` `Transcription` `Cross-platform`<br>
-[Source and releases →](https://github.com/michael-berardi/ultravox-light/releases/latest) · [Project page →](https://implosecybernetics.com/projects/ultravox/)
-
-## Protocols
-
-### [UltraTerm Terminal Protocol (UTP)](https://github.com/michael-berardi/ultraterm-protocol)
-
-A same-user local protocol for inspecting and controlling persistent terminal slots, handing work between profiles, coordinating managers with workers, and reporting through authorized private routes. UTP v2 uses JSON Lines over a mode-`0600` Unix socket; destructive operations use identity-bound dry runs and explicit confirmation.
-
-`Python` `JSON Lines` `Unix sockets` `Agent orchestration`<br>
-[Source →](https://github.com/michael-berardi/ultraterm-protocol) · [Protocol v2 →](https://github.com/michael-berardi/ultraterm-protocol/blob/main/protocols/v2.md)
-
-### [UltraTerm Subagent Protocol (USAP)](https://github.com/michael-berardi/ultraterm-subagent-protocol)
-
-A compact, vendor-neutral protocol for getting more correct work done with subagents. The primary agent keeps decomposition, judgment, integration, and proof; only bounded independent leaves are delegated, concurrency follows the dependency graph, and each leaf routes to the cheapest capable model tier.
-
-`Subagents` `Vendor-neutral` `Model routing` `Integration discipline`<br>
-[Source and protocol →](https://github.com/michael-berardi/ultraterm-subagent-protocol)
-
-## More open-source work
-
-- **[Ultra Media Remote](https://github.com/michael-berardi/ultra-media-remote)** — a shared macOS Now Playing bridge for metadata, artwork, and media transport.
-- **[OverSeer Best Free](https://github.com/michael-berardi/overseer-best-free)** — a zero-dependency resolver for the best available free chat model on OpenRouter.
-- **[OpenTao](https://github.com/michael-berardi/opentao)** — a phrase-aligned reader for all 81 chapters of the *Daodejing*, with Chinese text, multiple English views, and commentary. [Read it live →](https://opentao.pages.dev/)
-
-## Engineering approach
-
-- **Keep ownership local.** Private data and high-trust actions should stay close to the person operating the software.
-- **Make boundaries explicit.** Permissions, transport, authentication, and failure modes belong in the design, not in a footnote.
-- **Keep the dependency graph honest.** A dependency should earn the operational weight it adds.
-- **Design for the second month.** Installation, diagnostics, upgrades, rollback, and documentation matter after the first demo.
-- **Test the contract.** Observable behavior and failure cases matter more than implementation trivia.
-
-## Current interests
-
-Local-first AI infrastructure, MCP and machine-readable CLIs, browser and desktop automation, cross-platform applications, search and knowledge systems, privacy-conscious developer tools, and the boundary between useful automation and user control.
-
-## Where to start
-
-If you're evaluating my engineering work, these projects show different parts of it:
-
-- **Retex** for CLI and data-contract design, indexing, security, and release discipline.
-- **OverSeer Browser** for browser architecture, permission boundaries, native messaging, and automation ergonomics.
-- **UltraTerm Computer Use** for cross-platform systems work and agent-to-desktop interfaces.
-- **UltraVox Light** for Rust, native applications, media pipelines, and private on-device AI.
-- **UTP and USAP** for local protocol design, safe multi-agent orchestration, delegation economics, and explicit human authorization.
-
-Thoughtful issues, pull requests, and technical conversations are welcome in the relevant repository. For product engineering or consulting, I work through [Liberty Design Studio](https://libertydesign.studio/). Independent software lives under [Implose Cybernetics](https://implosecybernetics.com/).
+Issues and pull requests are welcome on any repo above. For product engineering and consulting, find me at [Liberty Design Studio](https://libertydesign.studio/). Independent software lives at [Implose Cybernetics](https://implosecybernetics.com/).
