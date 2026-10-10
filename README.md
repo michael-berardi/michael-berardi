@@ -47,4 +47,4 @@ Private data stays close to the person who owns it. Permissions and failure mode
 
 ## Say hello
 
-Issues and pull requests are welcome on any repo above. For product engineering and consulting, find me at [Liberty Design Studio](https://libertydesign.studio/). Independent software lives at [Implose Cybernetics](https://implosecybernetics.com/software/).
+Issues and pull requests are welcome on any repo above. For product engineering and consulting, find me at [Liberty Design Studio](https://libertydesign.studio/). Independent software lives at [Pareto Cybernetics](https://paretocybernetics.com/software/).
