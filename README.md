@@ -34,12 +34,10 @@ Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 |---|---|
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device transcription for macOS, Windows, and Linux. Dictate into any app, transcribe meetings and media, keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
 | **[Skribi](https://github.com/michael-berardi/skribi)** | A calm reader and editor for Markdown libraries and Retex vaults. Imports Obsidian and Notion without holding your notes hostage. `Rust` |
-| **[OpenTao](https://github.com/michael-berardi/opentao)** | All 81 chapters of the *Daodejing*, phrase-aligned across Chinese and three English readings. [Read it](https://opentao.pages.dev/) `TypeScript` |
 
 ## Small, sharp tools
 
-**[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework.<br>
-**[overseer-best-free](https://github.com/michael-berardi/overseer-best-free)** finds the best free chat model on OpenRouter right now, so your bot stops breaking every Thursday.
+**[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework.
 
 ## How I work
 
