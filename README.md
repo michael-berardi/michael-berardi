@@ -1,11 +1,11 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg?v=2">
-  <img src="./assets/header.svg?v=2" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
+  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg?v=3">
+  <img src="./assets/header.svg?v=3" alt="Michael Berardi. New York and Buenos Aires." width="100%">
 </picture>
 
-I build the unglamorous parts of AI tooling: the memory, the hands, the plan, the bill, and the cleanup. It runs on your machine, keeps your data in plain files, and is still working in month three, long after the launch thread has scrolled away.
+I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.
 
-Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
+The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
 
 ## Agent infrastructure
 
@@ -46,10 +46,10 @@ Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 | **[cd-case](https://github.com/michael-berardi/cd-case)** | A CD jewel case in three.js, built to the real dimensions: light refracts through the shell and the disc throws a true diffraction rainbow. [Live demo](https://cd-case.pages.dev) `TypeScript` |
 | **[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
 
-## How I work
+## How it's built
 
-Private data stays close to the person who owns it. Permissions and failure modes are designed up front, where they belong. Every dependency has to earn its keep. Claims ship with benchmarks, and the benchmarks ship with their caveats.
+Your data stays on your machine. Permissions and failure modes are designed first. Every dependency earns its place, and every number ships with the benchmark behind it.
 
-## Say hello
+## Work with me
 
-Issues and pull requests are welcome on any repo above. For product engineering and consulting, find me at [Liberty Design Studio](https://libertydesign.studio/). Independent software lives at [Pareto Cybernetics](https://paretocybernetics.com/software/).
+[Liberty Design Studio](https://libertydesign.studio/) builds websites, brands and search strategy for businesses, and software when the problem calls for it. Independent software lives at [Pareto Cybernetics](https://paretocybernetics.com/software/). Issues and pull requests are welcome on any repo here.
