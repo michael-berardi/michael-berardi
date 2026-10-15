@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg?v=3">
-  <img src="./assets/header.svg?v=3" alt="Michael Berardi. New York and Buenos Aires." width="100%">
+  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg?v=4">
+  <img src="./assets/header.svg?v=4" alt="Michael Berardi. Building Motorcycles for the Mind." width="100%">
 </picture>
 
 I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.

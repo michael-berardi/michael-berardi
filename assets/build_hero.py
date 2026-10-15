@@ -25,9 +25,9 @@ from PIL import Image
 OUT = Path(__file__).resolve().parent
 
 NAME = "Michael Berardi"
-TAGLINE = "New York · Buenos Aires"
-TAGLINE_LINES = ("New York · Buenos Aires",)
-TITLE = f"{NAME}. New York and Buenos Aires."
+TAGLINE = "Building Motorcycles for the Mind"
+TAGLINE_LINES = ("Building Motorcycles for the Mind",)
+TITLE = f"{NAME}. {TAGLINE}."
 INK, BODY = "#f2f4f7", "#9aa3ad"
 DISPLAY = "Hubot, -apple-system, 'Segoe UI', Helvetica, sans-serif"
 SANS = "Mona, -apple-system, 'Segoe UI', Helvetica, sans-serif"
