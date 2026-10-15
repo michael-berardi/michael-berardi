@@ -98,8 +98,8 @@ def mobile(source: Image.Image, css: str) -> str:
 def main():
     css = font_css()
     source = Image.open(OUT / "horizon.jpg")
-    (OUT / "header.svg").write_text(desktop(source, css))
-    (OUT / "header-mobile.svg").write_text(mobile(source, css))
+    (OUT / "banner.svg").write_text(desktop(source, css))
+    (OUT / "banner-mobile.svg").write_text(mobile(source, css))
 
 
 if __name__ == "__main__":
