@@ -80,8 +80,8 @@ def svg(w: int, h: int, css: str, picture: str, body: str) -> str:
 
 def desktop(source: Image.Image, css: str) -> str:
     w, h = 1536, 512
-    body = (f'<text x="96" y="236" fill="{INK}" font-family="{DISPLAY}" font-size="84" letter-spacing="-1.5">{NAME}</text>\n'
-            f'<text x="99" y="300" fill="{BODY}" font-family="{SANS}" font-size="27" letter-spacing=".2">{TAGLINE}</text>\n')
+    body = (f'<text x="96" y="236" fill="{INK}" font-family="{DISPLAY}" font-size="84" letter-spacing="-1" word-spacing="14">{NAME}</text>\n'
+            f'<text x="99" y="304" fill="{BODY}" font-family="{SANS}" font-size="30" letter-spacing=".3" word-spacing="2">{TAGLINE}</text>\n')
     return svg(w, h, css, jpeg(source.resize((w, h), Image.LANCZOS)), body)
 
 
@@ -90,9 +90,9 @@ def mobile(source: Image.Image, css: str) -> str:
     # the light on the horizon sits in the right of the frame: keep it, and the dark sea below it for the text
     span = round(source.height * w / h)
     canvas = source.crop((source.width - span, 0, source.width, source.height)).resize((w, h), Image.LANCZOS)
-    body = (f'<text x="60" y="470" fill="{INK}" font-family="{DISPLAY}" font-size="76" letter-spacing="-1.5">{NAME}</text>\n'
-            f'<g fill="{BODY}" font-family="{SANS}" font-size="29"><text x="63" y="530">{TAGLINE_LINES[0]}</text>'
-            f'<text x="63" y="570">{TAGLINE_LINES[1]}</text></g>\n')
+    body = (f'<text x="56" y="452" fill="{INK}" font-family="{DISPLAY}" font-size="90" letter-spacing="-1" word-spacing="14">{NAME}</text>\n'
+            f'<g fill="{BODY}" font-family="{SANS}" font-size="42" letter-spacing=".3" word-spacing="2"><text x="60" y="526">{TAGLINE_LINES[0]}</text>'
+            f'<text x="60" y="580">{TAGLINE_LINES[1]}</text></g>\n')
     return svg(w, h, css, jpeg(canvas), body)
 
 
