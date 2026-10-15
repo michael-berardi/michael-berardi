@@ -25,9 +25,9 @@ from PIL import Image
 OUT = Path(__file__).resolve().parent
 
 NAME = "Michael Berardi"
-TAGLINE = "I build software that stays useful when the demo is over."
-TAGLINE_LINES = ("I build software that stays useful", "when the demo is over.")
-TITLE = f"{NAME}. {TAGLINE}"
+TAGLINE = "New York · Buenos Aires"
+TAGLINE_LINES = ("New York · Buenos Aires",)
+TITLE = f"{NAME}. New York and Buenos Aires."
 INK, BODY = "#f2f4f7", "#9aa3ad"
 DISPLAY = "Hubot, -apple-system, 'Segoe UI', Helvetica, sans-serif"
 SANS = "Mona, -apple-system, 'Segoe UI', Helvetica, sans-serif"
@@ -81,7 +81,7 @@ def svg(w: int, h: int, css: str, picture: str, body: str) -> str:
 def desktop(source: Image.Image, css: str) -> str:
     w, h = 1536, 512
     body = (f'<text x="96" y="236" fill="{INK}" font-family="{DISPLAY}" font-size="84" letter-spacing="-1" word-spacing="14">{NAME}</text>\n'
-            f'<text x="99" y="304" fill="{BODY}" font-family="{SANS}" font-size="30" letter-spacing=".3" word-spacing="2">{TAGLINE}</text>\n')
+            f'<text x="99" y="304" fill="{BODY}" font-family="{SANS}" font-size="30" letter-spacing="2">{TAGLINE}</text>\n')
     return svg(w, h, css, jpeg(source.resize((w, h), Image.LANCZOS)), body)
 
 
@@ -91,8 +91,7 @@ def mobile(source: Image.Image, css: str) -> str:
     span = round(source.height * w / h)
     canvas = source.crop((source.width - span, 0, source.width, source.height)).resize((w, h), Image.LANCZOS)
     body = (f'<text x="56" y="452" fill="{INK}" font-family="{DISPLAY}" font-size="90" letter-spacing="-1" word-spacing="14">{NAME}</text>\n'
-            f'<g fill="{BODY}" font-family="{SANS}" font-size="42" letter-spacing=".3" word-spacing="2"><text x="60" y="526">{TAGLINE_LINES[0]}</text>'
-            f'<text x="60" y="580">{TAGLINE_LINES[1]}</text></g>\n')
+            f'<text x="60" y="530" fill="{BODY}" font-family="{SANS}" font-size="42" letter-spacing="2">{TAGLINE_LINES[0]}</text>\n')
     return svg(w, h, css, jpeg(canvas), body)
 
 
