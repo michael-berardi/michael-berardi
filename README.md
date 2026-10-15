@@ -1,11 +1,9 @@
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/header-dark-mobile.svg">
-  <source media="(max-width: 600px)" srcset="./assets/header-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-  <img src="./assets/header-light.svg" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
+  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg">
+  <img src="./assets/header.svg" alt="Michael Berardi. I build software that stays useful when the demo is over." width="100%">
 </picture>
 
-I build the unglamorous parts of AI tooling: the memory, the hands, the plan, and the bill. It runs on your machine, keeps your data in plain files, and is still working in month three, long after the launch thread has scrolled away.
+I build the unglamorous parts of AI tooling: the memory, the hands, the plan, the bill, and the cleanup. It runs on your machine, keeps your data in plain files, and is still working in month three, long after the launch thread has scrolled away.
 
 Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 
@@ -18,6 +16,7 @@ Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 | **[UltraTerm Plan](https://github.com/michael-berardi/ultraterm-plan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
 | **[USAP](https://github.com/michael-berardi/ultraterm-subagent-protocol)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. `Protocol` |
 | **[UTP](https://github.com/michael-berardi/ultraterm-protocol)** | Lets local agents inspect and drive persistent terminal sessions. JSON Lines over a `0600` Unix socket, and every destructive action dry-runs first. `Python` |
+| **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. `Python` |
 
 ## Memory and hands
 
@@ -34,10 +33,18 @@ Swift, Rust, TypeScript, and Python, depending on which one the problem prefers.
 |---|---|
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device transcription for macOS, Windows, and Linux. Dictate into any app, transcribe meetings and media, keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
 | **[Skribi](https://github.com/michael-berardi/skribi)** | A calm reader and editor for Markdown libraries and Retex vaults. Imports Obsidian and Notion without holding your notes hostage. `Rust` |
+| **[Concept](https://github.com/michael-berardi/concept)** | Pages, databases and boards for your team, stored as plain Markdown. Self-host it or use the native Mac app, sync with Git, and read the same folder with Retex. `TypeScript` |
+| **[Good Night](https://github.com/michael-berardi/goodnight)** | Warms your screen after sunset and dims it all the way to black, external monitors included. Free for macOS and Windows. [Download](https://github.com/michael-berardi/goodnight/releases/latest) `Swift` |
+| **[UltraLink](https://github.com/michael-berardi/ultralink)** | Your Starlink connection, live in the Mac menu bar: speed, outages, history and the sky view. Read-only, no account, no cloud. [Download](https://github.com/michael-berardi/ultralink/releases/latest) `Swift` |
 
-## Small, sharp tools
+## Libraries and methods
 
-**[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework.
+| | |
+|---|---|
+| **[Carapace](https://github.com/michael-berardi/carapace)** | Write your app's brain once in Rust and give each platform a thin, generated shell: SwiftUI, Tauri, or anything that can call C. Good Night runs on it. `Rust` |
+| **[Champollion](https://github.com/michael-berardi/champollion)** | An open method and offline toolkit for translating complete works directly from their originals, with the checks to prove it. Grew out of [Mouseia](https://mouseia.org). `Python` |
+| **[cd-case](https://github.com/michael-berardi/cd-case)** | A CD jewel case in three.js, built to the real dimensions: light refracts through the shell and the disc throws a true diffraction rainbow. [Live demo](https://cd-case.pages.dev) `TypeScript` |
+| **[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
 
 ## How I work
 
