@@ -5,7 +5,7 @@
 
 I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.
 
-The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
+The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, dictation to talk to them, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
 
 ## Agent infrastructure
 
@@ -14,25 +14,20 @@ The repos here are the tools that way of working needed: memory the agents share
 | **[Steak Pi](https://github.com/michael-berardi/steak-pi)** | The [Pi coding agent](https://pi.dev), cooked properly. Native subagents, deterministic compaction, automatic verification, and a TUI worth living in. Eight parallel workers finish in under 1.5 s, and a full session peaks at the same memory as stock Pi. `TypeScript` |
 | **[Carl](https://github.com/michael-berardi/carl)** | A small bot gateway for steering your agents from your phone. It lives in Telegram, Slack and Discord, answers a status check across running jobs in 21 s on 67k tokens where Hermes took 41 s on 373k, and shows you the exact command with Run once and Deny buttons before anything risky. Runs on your Claude Code or Codex login. `TypeScript` |
 | **[UltraCompress](https://github.com/michael-berardi/ultracompress)** | Context compaction with no LLM in the loop. About 65 ms where Claude Code's own summarizer takes 23 to 52 seconds, at $0 per compaction, and anything it condenses stays searchable. Ships for Pi and as a Claude Code plugin. `Rust` |
-| **[UltraTerm Plan](https://github.com/michael-berardi/ultraterm-plan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
+| **[UltraPlan](https://github.com/michael-berardi/ultraplan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
 | **[USAP](https://github.com/michael-berardi/ultraterm-subagent-protocol)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. `Protocol` |
 | **[UTP](https://github.com/michael-berardi/ultraterm-protocol)** | Lets local agents inspect and drive persistent terminal sessions. JSON Lines over a `0600` Unix socket, and every destructive action dry-runs first. `Python` |
-| **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. `Python` |
-
-## Memory and hands
-
-| | |
-|---|---|
 | **[Retex](https://github.com/michael-berardi/retex)** | A Markdown vault engine and machine-readable CLI for people and agents. Search, recall, backlinks, boards, undo, and MCP over an ordinary folder. No database to get locked into. `Swift` |
 | **[OverSeer Browser](https://github.com/michael-berardi/overseer-browser)** | Model-agnostic browser automation for Chromium. Agents get their own window; your tabs stay yours until you lend one. `TypeScript` `Python` |
 | **[UltraTerm Computer Use](https://github.com/michael-berardi/ultraterm-computer-use)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. `Swift` |
 | **[Rusty Mirror](https://github.com/michael-berardi/rusty-mirror)** | A hidden, disposable twin of your real Tauri app window, so agents can poke, screenshot and hot-swap the actual app instead of a browser stand-in. `Rust` |
+| **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device dictation and transcription for macOS, Windows, and Linux. Talk to your agents or any other app, transcribe meetings and media, and keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
+| **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. `Python` |
 
 ## Apps
 
 | | |
 |---|---|
-| **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device transcription for macOS, Windows, and Linux. Dictate into any app, transcribe meetings and media, keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
 | **[Skribi](https://github.com/michael-berardi/skribi)** | A calm reader and editor for Markdown libraries and Retex vaults. Imports Obsidian and Notion without holding your notes hostage. `Rust` |
 | **[Concept](https://github.com/michael-berardi/concept)** | Pages, databases and boards for your team, stored as plain Markdown. Self-host it or use the native Mac app, sync with Git, and read the same folder with Retex. `TypeScript` |
 | **[Good Night](https://github.com/michael-berardi/goodnight)** | Warms your screen after sunset and dims it all the way to black, external monitors included. Free for macOS and Windows. [Download](https://github.com/michael-berardi/goodnight/releases/latest) `Swift` |
