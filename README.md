@@ -5,7 +5,7 @@
 
 I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.
 
-The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, dictation to talk to them, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
+The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, dictation to talk to them, delegation that checks its own results, compaction that costs nothing, a queue that gives their builds fair turns, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
 
 ## Agent infrastructure
 
@@ -22,6 +22,7 @@ The repos here are the tools that way of working needed: memory the agents share
 | **[UltraTerm Computer Use](https://github.com/michael-berardi/ultraterm-computer-use)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. `Swift` |
 | **[Rusty Mirror](https://github.com/michael-berardi/rusty-mirror)** | A hidden, disposable twin of your real Tauri app window, so agents can poke, screenshot and hot-swap the actual app instead of a browser stand-in. `Rust` |
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device dictation and transcription for macOS, Windows, and Linux. Talk to your agents or any other app, transcribe meetings and media, and keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
+| **[Smart Build](https://github.com/michael-berardi/smart-build)** | One fair queue for every heavy build on the machine. A couple of builds run at once, one per repo, in the order they arrived, and the whole process tree stops on Ctrl-C, a timeout or a killed agent. A burst of 12 builds finishes in 3.9 s where the queue it replaced took 11.6 s. No daemon, no dependencies. `Python` |
 | **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. `Python` |
 
 ## Apps
