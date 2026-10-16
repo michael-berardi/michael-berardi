@@ -5,13 +5,14 @@
 
 I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.
 
-The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
+The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, delegation that checks its own results, compaction that costs nothing, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
 
 ## Agent infrastructure
 
 | | |
 |---|---|
 | **[Steak Pi](https://github.com/michael-berardi/steak-pi)** | The [Pi coding agent](https://pi.dev), cooked properly. Native subagents, deterministic compaction, automatic verification, and a TUI worth living in. Eight parallel workers finish in under 1.5 s, and a full session peaks at the same memory as stock Pi. `TypeScript` |
+| **[Carl](https://github.com/michael-berardi/carl)** | A small bot gateway for steering your agents from your phone. It lives in Telegram, Slack and Discord, answers a status check across running jobs in 21 s on 67k tokens where Hermes took 41 s on 373k, and shows you the exact command with Run once and Deny buttons before anything risky. Runs on your Claude Code or Codex login. `TypeScript` |
 | **[UltraCompress](https://github.com/michael-berardi/ultracompress)** | Context compaction with no LLM in the loop. About 65 ms where Claude Code's own summarizer takes 23 to 52 seconds, at $0 per compaction, and anything it condenses stays searchable. Ships for Pi and as a Claude Code plugin. `Rust` |
 | **[UltraTerm Plan](https://github.com/michael-berardi/ultraterm-plan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
 | **[USAP](https://github.com/michael-berardi/ultraterm-subagent-protocol)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. `Protocol` |
