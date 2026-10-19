@@ -33,6 +33,7 @@ The repos here are the tools that way of working needed: memory the agents share
 | **[Concept](https://github.com/michael-berardi/concept)** | Pages, databases and boards for your team, stored as plain Markdown. Self-host it or use the native Mac app, sync with Git, and read the same folder with Retex. `TypeScript` |
 | **[Good Night](https://github.com/michael-berardi/goodnight)** | Warms your screen after sunset and dims it all the way to black, external monitors included. Free for macOS and Windows. [Download](https://github.com/michael-berardi/goodnight/releases/latest) `Swift` |
 | **[UltraLink](https://github.com/michael-berardi/ultralink)** | Your Starlink connection, live in the Mac menu bar: speed, outages, history and the sky view. Read-only, no account, no cloud. [Download](https://github.com/michael-berardi/ultralink/releases/latest) `Swift` |
+| **[OpenMail](https://github.com/michael-berardi/openmail)** | An open mail client for people and agents. A signed Mac app on the system web view (about 45 MB of memory), IMAP push, offline queue, Apple Mail import, and an MCP server where agents triage and draft but sending waits for your approval. [Download](https://github.com/michael-berardi/openmail/releases/latest) `Go` |
 
 ## Libraries and methods
 
