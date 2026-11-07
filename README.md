@@ -50,4 +50,4 @@ Your data stays on your machine. Permissions and failure modes are designed firs
 
 ## Work with me
 
-[Liberty Design Studio](https://libertydesign.studio/) builds websites, brands and search strategy for businesses, and software when the problem calls for it. Independent software lives at [Pareto Cybernetics](https://paretocybernetics.com/software/). Issues and pull requests are welcome on any repo here.
+[Liberty Design Studio](https://libertydesign.studio/) builds websites, brands and search strategy for businesses, and software when the problem calls for it. Our open-source tools for running AI coding agents live at [Pareto Cybernetics](https://paretocybernetics.com), with a real demo and install command for each. Issues and pull requests are welcome on any repo here.
