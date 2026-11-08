@@ -41,7 +41,6 @@ These are the tools that way of working needed: memory the agents share, a brows
 |---|---|
 | **[Carapace](https://paretocybernetics.com/projects/carapace/)** | Write your app's brain once in Rust and give each platform a thin, generated shell: SwiftUI, Tauri, or anything that can call C. Good Night runs on it. `Rust` |
 | **[Champollion](https://paretocybernetics.com/projects/champollion/)** | An open method and offline toolkit for translating complete works directly from their originals, with the checks to prove it. Grew out of [Mouseia](https://mouseia.org). [Source](https://github.com/michael-berardi/champollion) `Python` |
-| **[cd-case](https://github.com/michael-berardi/cd-case)** | A CD jewel case in three.js, built to the real dimensions: light refracts through the shell and the disc throws a true diffraction rainbow. [Live demo](https://cd-case.pages.dev) `TypeScript` |
 | **[ultra-media-remote](https://paretocybernetics.com/projects/ultra-media-remote/)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
 
 ## How it's built
