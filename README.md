@@ -20,7 +20,7 @@ These are the tools that way of working needed: memory the agents share, a brows
 | **[Retex](https://paretocybernetics.com/projects/retex/)** | A Markdown vault engine and machine-readable CLI for people and agents. Search, recall, backlinks, boards, undo, and MCP over an ordinary folder. No database to get locked into. [Source](https://github.com/michael-berardi/retex) `Swift` |
 | **[OverSeer Browser](https://paretocybernetics.com/projects/overseer-browser/)** | Model-agnostic browser automation for Chromium. Agents get their own window; your tabs stay yours until you lend one. [Source](https://github.com/michael-berardi/overseer-browser) `TypeScript` `Python` |
 | **[UltraTerm Computer Use](https://paretocybernetics.com/projects/ultraterm-computer-use/)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. [Source](https://github.com/michael-berardi/ultraterm-computer-use) `Swift` |
-| **[Rusty Mirror](https://github.com/michael-berardi/rusty-mirror)** | A hidden, disposable twin of your real Tauri app window, so agents can poke, screenshot and hot-swap the actual app instead of a browser stand-in. `Rust` |
+| **[Rusty Mirror](https://paretocybernetics.com/projects/rusty-mirror/)** | A hidden, disposable twin of your real Tauri app window, so agents can poke, screenshot and hot-swap the actual app instead of a browser stand-in. `Rust` |
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device dictation and transcription for macOS, Windows, and Linux. Talk to your agents or any other app, transcribe meetings and media, and keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
 | **[Smart Build](https://paretocybernetics.com/projects/smart-build/)** | One fair queue for every heavy build on the machine. A couple of builds run at once, one per repo, in the order they arrived, and the whole process tree stops on Ctrl-C, a timeout or a killed agent. A burst of 12 builds finishes in 3.9 s where the queue it replaced took 11.6 s. No daemon, no dependencies. [Source](https://github.com/michael-berardi/smart-build) `Python` |
 | **[TrimReaper](https://paretocybernetics.com/projects/trimreaper/)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. [Source](https://github.com/michael-berardi/TrimReaper) `Python` |
@@ -30,7 +30,7 @@ These are the tools that way of working needed: memory the agents share, a brows
 | | |
 |---|---|
 | **[Skribi](https://github.com/michael-berardi/skribi)** | A calm reader and editor for Markdown libraries and Retex vaults. Imports Obsidian and Notion without holding your notes hostage. `Rust` |
-| **[Concept](https://github.com/michael-berardi/concept)** | Pages, databases and boards for your team, stored as plain Markdown. Self-host it or use the native Mac app, sync with Git, and read the same folder with Retex. `TypeScript` |
+| **[Concept](https://paretocybernetics.com/projects/concept/)** | Pages, databases and boards for your team, stored as plain Markdown. Self-host it or use the native Mac app, sync with Git, and read the same folder with Retex. `TypeScript` |
 | **[Good Night](https://paretocybernetics.com/projects/goodnight/)** | Warms your screen after sunset and dims it all the way to black, external monitors included. Free for macOS and Windows. [Download](https://github.com/michael-berardi/goodnight/releases/latest) `Swift` |
 | **[UltraLink](https://paretocybernetics.com/projects/ultralink/)** | Your Starlink connection, live in the Mac menu bar: speed, outages, history and the sky view. Read-only, no account, no cloud. [Download](https://github.com/michael-berardi/ultralink/releases/latest) `Swift` |
 | **[OpenMail](https://github.com/michael-berardi/openmail)** | An open mail client for people and agents. A signed Mac app on the system web view (about 45 MB of memory), IMAP push, offline queue, Apple Mail import, and an MCP server where agents triage and draft but sending waits for your approval. [Download](https://github.com/michael-berardi/openmail/releases/latest) `Go` |
@@ -39,10 +39,10 @@ These are the tools that way of working needed: memory the agents share, a brows
 
 | | |
 |---|---|
-| **[Carapace](https://github.com/michael-berardi/carapace)** | Write your app's brain once in Rust and give each platform a thin, generated shell: SwiftUI, Tauri, or anything that can call C. Good Night runs on it. `Rust` |
+| **[Carapace](https://paretocybernetics.com/projects/carapace/)** | Write your app's brain once in Rust and give each platform a thin, generated shell: SwiftUI, Tauri, or anything that can call C. Good Night runs on it. `Rust` |
 | **[Champollion](https://paretocybernetics.com/projects/champollion/)** | An open method and offline toolkit for translating complete works directly from their originals, with the checks to prove it. Grew out of [Mouseia](https://mouseia.org). [Source](https://github.com/michael-berardi/champollion) `Python` |
 | **[cd-case](https://github.com/michael-berardi/cd-case)** | A CD jewel case in three.js, built to the real dimensions: light refracts through the shell and the disc throws a true diffraction rainbow. [Live demo](https://cd-case.pages.dev) `TypeScript` |
-| **[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
+| **[ultra-media-remote](https://paretocybernetics.com/projects/ultra-media-remote/)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
 
 ## How it's built
 
