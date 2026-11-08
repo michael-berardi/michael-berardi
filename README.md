@@ -3,27 +3,27 @@
   <img src="./assets/banner.svg" alt="Michael Berardi. Building Motorcycles for the Mind." width="100%">
 </picture>
 
-I'm Mike. I run [Liberty Design Studio](https://libertydesign.studio/) from New York and Buenos Aires, and most days a few dozen AI coding agents work alongside me.
+I'm Mike. I build [Pareto Cybernetics](https://paretocybernetics.com): open-source, local-first tools for working with AI agents. Most days a few dozen AI coding agents work alongside me, from New York and Buenos Aires.
 
-The repos here are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, dictation to talk to them, delegation that checks its own results, compaction that costs nothing, a queue that gives their builds fair turns, and a reaper that cleans up after them. All of it runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers.
+These are the tools that way of working needed: memory the agents share, a browser they can drive, plans they keep, a bot to steer them from your phone, dictation to talk to them, delegation that checks its own results, compaction that costs nothing, a queue that gives their builds fair turns, and a reaper that cleans up after them. All of it is free, runs on your own machine and keeps your data in plain files, written in whichever of Swift, Rust, TypeScript or Python the problem prefers. Each one has a page with a demo and an install command at [paretocybernetics.com](https://paretocybernetics.com).
 
 ## Agent infrastructure
 
 | | |
 |---|---|
-| **[Steak Pi](https://github.com/michael-berardi/steak-pi)** | The [Pi coding agent](https://pi.dev), cooked properly. Native subagents, deterministic compaction, automatic verification, and a TUI worth living in. Eight parallel workers finish in under 1.5 s, and a full session peaks at the same memory as stock Pi. `TypeScript` |
-| **[Carl](https://github.com/michael-berardi/carl)** | A small bot gateway for steering your agents from your phone. It lives in Telegram, Slack and Discord, answers a status check across running jobs in 21 s on 67k tokens where Hermes took 41 s on 373k, and shows you the exact command with Run once and Deny buttons before anything risky. Runs on your Claude Code or Codex login. `TypeScript` |
-| **[UltraCompress](https://github.com/michael-berardi/ultracompress)** | Context compaction with no LLM in the loop. About 65 ms where Claude Code's own summarizer takes 23 to 52 seconds, at $0 per compaction, and anything it condenses stays searchable. Ships for Pi and as a Claude Code plugin. `Rust` |
-| **[UltraPlan](https://github.com/michael-berardi/ultraplan)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. `TypeScript` |
-| **[USAP](https://github.com/michael-berardi/ultraterm-subagent-protocol)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. `Protocol` |
-| **[UTP](https://github.com/michael-berardi/ultraterm-protocol)** | Lets local agents inspect and drive persistent terminal sessions. JSON Lines over a `0600` Unix socket, and every destructive action dry-runs first. `Python` |
-| **[Retex](https://github.com/michael-berardi/retex)** | A Markdown vault engine and machine-readable CLI for people and agents. Search, recall, backlinks, boards, undo, and MCP over an ordinary folder. No database to get locked into. `Swift` |
-| **[OverSeer Browser](https://github.com/michael-berardi/overseer-browser)** | Model-agnostic browser automation for Chromium. Agents get their own window; your tabs stay yours until you lend one. `TypeScript` `Python` |
-| **[UltraTerm Computer Use](https://github.com/michael-berardi/ultraterm-computer-use)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. `Swift` |
+| **[Steak Pi](https://paretocybernetics.com/projects/steak-pi/)** | The [Pi coding agent](https://pi.dev), cooked properly. Native subagents, deterministic compaction, automatic verification, and a TUI worth living in. Eight parallel workers finish in under 1.5 s, and a full session peaks at the same memory as stock Pi. [Source](https://github.com/michael-berardi/steak-pi) `TypeScript` |
+| **[Carl](https://paretocybernetics.com/projects/carl/)** | A small bot gateway for steering your agents from your phone. It lives in Telegram, Slack and Discord, answers a status check across running jobs in 21 s on 67k tokens where Hermes took 41 s on 373k, and shows you the exact command with Run once and Deny buttons before anything risky. Runs on your Claude Code or Codex login. [Source](https://github.com/michael-berardi/carl) `TypeScript` |
+| **[UltraCompress](https://paretocybernetics.com/projects/ultracompress/)** | Context compaction with no LLM in the loop. About 65 ms where Claude Code's own summarizer takes 23 to 52 seconds, at $0 per compaction, and anything it condenses stays searchable. Ships for Pi and as a Claude Code plugin. [Source](https://github.com/michael-berardi/ultracompress) `Rust` |
+| **[UltraPlan](https://paretocybernetics.com/projects/ultraplan/)** | The plan the agent keeps and you can read. Phases in order, one active task, blocked means blocked. Survives compaction, resume, and a change of agent. [Source](https://github.com/michael-berardi/ultraplan) `TypeScript` |
+| **[USAP](https://paretocybernetics.com/projects/usap/)** | A delegation protocol for subagents. Parallelize only what is actually independent, send each task to the cheapest model that can finish it, and treat "done" as evidence to check. [Source](https://github.com/michael-berardi/ultraterm-subagent-protocol) `Protocol` |
+| **[UTP](https://paretocybernetics.com/projects/ultraterm-protocol/)** | Lets local agents inspect and drive persistent terminal sessions. JSON Lines over a `0600` Unix socket, and every destructive action dry-runs first. [Source](https://github.com/michael-berardi/ultraterm-protocol) `Python` |
+| **[Retex](https://paretocybernetics.com/projects/retex/)** | A Markdown vault engine and machine-readable CLI for people and agents. Search, recall, backlinks, boards, undo, and MCP over an ordinary folder. No database to get locked into. [Source](https://github.com/michael-berardi/retex) `Swift` |
+| **[OverSeer Browser](https://paretocybernetics.com/projects/overseer-browser/)** | Model-agnostic browser automation for Chromium. Agents get their own window; your tabs stay yours until you lend one. [Source](https://github.com/michael-berardi/overseer-browser) `TypeScript` `Python` |
+| **[UltraTerm Computer Use](https://paretocybernetics.com/projects/ultraterm-computer-use/)** | Desktop automation for any MCP-capable agent on macOS, Linux, and Windows. Screenshots and keystrokes never leave the machine. [Source](https://github.com/michael-berardi/ultraterm-computer-use) `Swift` |
 | **[Rusty Mirror](https://github.com/michael-berardi/rusty-mirror)** | A hidden, disposable twin of your real Tauri app window, so agents can poke, screenshot and hot-swap the actual app instead of a browser stand-in. `Rust` |
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Private, on-device dictation and transcription for macOS, Windows, and Linux. Talk to your agents or any other app, transcribe meetings and media, and keep every recording local. [Download](https://github.com/michael-berardi/ultravox/releases/latest) `Rust` |
-| **[Smart Build](https://github.com/michael-berardi/smart-build)** | One fair queue for every heavy build on the machine. A couple of builds run at once, one per repo, in the order they arrived, and the whole process tree stops on Ctrl-C, a timeout or a killed agent. A burst of 12 builds finishes in 3.9 s where the queue it replaced took 11.6 s. No daemon, no dependencies. `Python` |
-| **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. `Python` |
+| **[Smart Build](https://paretocybernetics.com/projects/smart-build/)** | One fair queue for every heavy build on the machine. A couple of builds run at once, one per repo, in the order they arrived, and the whole process tree stops on Ctrl-C, a timeout or a killed agent. A burst of 12 builds finishes in 3.9 s where the queue it replaced took 11.6 s. No daemon, no dependencies. [Source](https://github.com/michael-berardi/smart-build) `Python` |
+| **[TrimReaper](https://paretocybernetics.com/projects/trimreaper/)** | Reclaims the disk agent swarms leave behind: clones, `node_modules`, Rust targets, scratch and screenshots. Deletes only what it can prove is safe, archives unsaved work first, and writes a receipt before every removal. CLI and MCP server. [Source](https://github.com/michael-berardi/TrimReaper) `Python` |
 
 ## Apps
 
@@ -40,7 +40,7 @@ The repos here are the tools that way of working needed: memory the agents share
 | | |
 |---|---|
 | **[Carapace](https://github.com/michael-berardi/carapace)** | Write your app's brain once in Rust and give each platform a thin, generated shell: SwiftUI, Tauri, or anything that can call C. Good Night runs on it. `Rust` |
-| **[Champollion](https://github.com/michael-berardi/champollion)** | An open method and offline toolkit for translating complete works directly from their originals, with the checks to prove it. Grew out of [Mouseia](https://mouseia.org). `Python` |
+| **[Champollion](https://paretocybernetics.com/projects/champollion/)** | An open method and offline toolkit for translating complete works directly from their originals, with the checks to prove it. Grew out of [Mouseia](https://mouseia.org). [Source](https://github.com/michael-berardi/champollion) `Python` |
 | **[cd-case](https://github.com/michael-berardi/cd-case)** | A CD jewel case in three.js, built to the real dimensions: light refracts through the shell and the disc throws a true diffraction rainbow. [Live demo](https://cd-case.pages.dev) `TypeScript` |
 | **[ultra-media-remote](https://github.com/michael-berardi/ultra-media-remote)** | Reads and controls macOS Now Playing from safe Rust, without linking Apple's private framework. `Rust` |
 
@@ -50,4 +50,6 @@ Your data stays on your machine. Permissions and failure modes are designed firs
 
 ## Work with me
 
-[Liberty Design Studio](https://libertydesign.studio/) builds websites, brands and search strategy for businesses, and software when the problem calls for it. Our open-source tools for running AI coding agents live at [Pareto Cybernetics](https://paretocybernetics.com), with a real demo and install command for each. Issues and pull requests are welcome on any repo here.
+Issues and pull requests are welcome on any repo here. For news and releases, follow [Pareto Cybernetics](https://paretocybernetics.com).
+
+My agency, [Liberty Design Studio](https://libertydesign.studio/), builds websites, brands and search strategy for businesses.
