@@ -36,6 +36,15 @@ I build [Pareto Cybernetics](https://paretocybernetics.com): open-source tools f
 | **[OpenMail](https://github.com/michael-berardi/openmail)** | Stores and searches IMAP mail locally, with a web app, Mac app, command-line tools and scoped MCP access. |
 | **[UltraVox](https://github.com/michael-berardi/ultravox)** | Transcribes speech and media on-device, with an open-source core and optional Pro features in official builds. |
 
+## Games
+
+Free to play in the browser at [paretocybernetics.com/games](https://paretocybernetics.com/games/).
+
+| Game | What it is |
+|---|---|
+| **[Castles of Sand](https://paretocybernetics.com/games/castles-of-sand/)** | A first-person multiplayer demolition game: wreck a private island villa, block by block, with real structural collapse. |
+| **[Amoeba](https://paretocybernetics.com/games/amoeba/)** | Life in a drop of pond water. |
+
 ## Libraries and methods
 
 | Project | What it does |
