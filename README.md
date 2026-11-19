@@ -43,6 +43,8 @@ Free to play in the browser at [paretocybernetics.com/games](https://paretocyber
 | Game | What it is |
 |---|---|
 | **[Castles of Sand](https://paretocybernetics.com/games/castles-of-sand/)** | A first-person multiplayer demolition game: wreck a private island villa, block by block, with real structural collapse. |
+| **[Load Bearing](https://paretocybernetics.com/games/load-bearing/)** | A first-person voxel demolition game: find what holds a four-storey mill up, cut exactly that, and the floors crush down by themselves. |
+| **[Rust Belt](https://paretocybernetics.com/games/rust-belt/)** | A pixel-art wrecking game: take a working automated foundry apart, part by part, by cutting its power, belts and fuel. |
 | **[Amoeba](https://paretocybernetics.com/games/amoeba/)** | Life in a drop of pond water. |
 
 ## Libraries and methods
