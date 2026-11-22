@@ -24,6 +24,7 @@ I build [Pareto Cybernetics](https://paretocybernetics.com): open-source tools f
 | **[Rusty Mirror](https://github.com/michael-berardi/rusty-mirror)** | Gives Tauri developers and testing agents a hidden second app window for inspecting and trying frontend changes. |
 | **[Smart Build](https://github.com/michael-berardi/smart-build)** | Queues heavy builds and tests per user, limits concurrency and serializes work in each Git worktree. |
 | **[TrimReaper](https://github.com/michael-berardi/TrimReaper)** | Reclaims disk space left by coding agents on macOS after checking job state, Git and retention rules. |
+| **[ultra-inference-optimization](https://github.com/michael-berardi/ultra-inference-optimization)** | Measures and tunes a local LLM server's speed one setting at a time, keeping only changes that beat repeated controls and pass quality checks. |
 
 ## Apps
 
