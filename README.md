@@ -36,7 +36,6 @@ I build [Pareto Cybernetics](https://paretocybernetics.com): open-source tools f
 | **[Good Night](https://github.com/michael-berardi/goodnight)** | Warms screens after sunset and dims supported displays on macOS and Windows. |
 | **[UltraLink](https://github.com/michael-berardi/ultralink)** | Shows Starlink traffic, outages and obstructions in the Mac menu bar without changing dish settings. |
 | **[OpenMail](https://github.com/michael-berardi/openmail)** | Stores and searches IMAP mail locally, with a web app, Mac app, command-line tools and scoped MCP access. |
-| **[UltraVox](https://github.com/michael-berardi/ultravox)** | Transcribes speech and media on-device, with an open-source core and optional Pro features in official builds. |
 
 ## Games
 
