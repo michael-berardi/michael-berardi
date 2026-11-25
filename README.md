@@ -12,6 +12,7 @@ I build [Pareto Cybernetics](https://paretocybernetics.com): open-source tools f
 | **[Carl](https://github.com/michael-berardi/carl)** | Connects agents to chat, a web app and an API so you can supervise work, approve actions and schedule tasks. |
 | **[Steak Pi](https://github.com/michael-berardi/steak-pi)** | Adds subagents, local context compaction, edit verification and local models with their harness adapters to the Pi coding agent. |
 | **[Steak DSH](https://github.com/michael-berardi/steak-dsh)** | Adds model selection (local models and Gemini through Google's Antigravity CLI included), edit checks and file-edit boundaries to DeepSeek Harness through a plugin bundle and launcher. |
+| **[Steak Antigravity](https://github.com/michael-berardi/steak-antigravity)** | Connects Google's Antigravity CLI to UltraTerm and Steak Pi with USAP subagent delegation, UI Mode transcript publishing, edit verification, owned-paths guards and shared skills/rules. |
 | **[codex-on-claude-code](https://github.com/michael-berardi/codex-on-claude-code)** | Connects the stock Codex CLI to your Claude Code login through a local bridge. |
 | **[UltraCompress](https://github.com/michael-berardi/ultracompress)** | Compacts agent context locally without a model call while keeping the original session searchable. |
 | **[Retex](https://github.com/michael-berardi/retex)** | Searches and manages Markdown vaults through a machine-readable CLI and MCP server. |
