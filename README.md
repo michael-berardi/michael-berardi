@@ -63,4 +63,8 @@ Free to play in the browser at [paretocybernetics.com/games](https://paretocyber
 | **[.github](https://github.com/michael-berardi/.github)** | Provides default community guidelines, support information and contribution templates. |
 | **[michael-berardi](https://github.com/michael-berardi/michael-berardi)** | Maintains this profile and its project directory. |
 
+## Privacy
+
+This page has no analytics, telemetry, tracking pixels or remote fonts: its banner and fonts are embedded in the SVGs in `assets/`, and beyond loading the page from GitHub it makes no network requests unless you open a link or use a listed project, each of which handles its own data.
+
 Issues and pull requests are welcome in each project repository.
